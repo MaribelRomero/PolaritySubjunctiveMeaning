@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8"/>
+    <title>Instrucciones</title>
+    <style>
+    body {
+        margin: 10px 20px;
+        padding: 0;
+        height: 100vh;
+        background-color: white;
+        font-size: 16px;
+        line-height: 1.6em;
+    }
+
+    h4 {
+        line-height: 0.1;
+    }
+
+    .container{
+        width: 70%;
+        margin: auto;
+    }
+    .container .examples{
+        text-align: center;
+        overflow: hidden;
+        align-items: center;
+        background-color:   #aed6f1 ;
+        border-radius: 10px;
+    }
+    .container .examples .escala  {
+      text-align: center;
+      align-items: center;
+      float: center;
+      justify-content: center;
+      position: relative;
+      display: inline-block;
+    }
+    .container .examples .escala label  {
+      float: left;
+    }
+
+    .container .examples .escala label.text {
+      padding-top: 1.45rem;
+      margin-left:  0.5rem;
+      margin-right:  0.5rem;
+      font-style: italic;
+    }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+            <center><h1><div class='fancy'> Instrucciones </div></h1></center>
+            <p>
+                En esta sección le explicamos el procedimiento a seguir.
+                Primero, leerá una frase describiendo un evento o situación.
+                Seguidamente, aparecerá una pregunta que deberá contestar, en una escala del 1 al 5,
+                si cree que la respuesta a dicha pregunta es afirmativa (5) o negativa (1).
+                A continuación, le mostramos un ejemplo similar a los que encontrará durante el estudio.
+                La respuesta correcta en este caso sería 5.
+            </p>
+            <div class="examples">
+                <p>El librero lamenta de esté lloviendo.</p>
+                <p>¿Está lloviendo?</p>
+                <div class="escala">
+                <label class="text">no</label>
+                <label> 1<br /><input type="radio" ></label>
+                <label> 2<br /><input type="radio" ></label>
+                <label> 3<br /><input type="radio" ></label>
+                <label> 4<br /><input type="radio" ></label>
+                <label> 5<br /><input type="radio" ></label>
+                <label class="text">sí</label>
+                </div>
+            </div>
+            <p>Antes de empezar con el experimento, primero haremos una fase de entrenamiento con 3 frases para que pueda practicar.
+                Tras esto, vendrá el estudio que funciona exactamente igual que la fase anterior, pero con más frases a evaluar. </p>
+        <p> ¡Empezamos con la práctica! </p>
+    </div>
+</body>
+</html>

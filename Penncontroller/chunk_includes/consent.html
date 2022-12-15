@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8"/>
+    <title>Estudio sobre el español peninsular</title>
+    <style>
+    body {
+        margin: 10px 20px;
+        padding: 0;
+        height: 100vh;
+        background-color: white;
+        font-size: 16px;
+        line-height: 1.6em;
+        text-align: justify;
+    }
+
+    h4 {
+        line-height: 0.1;
+    }
+
+    .container{
+        width: 70%;
+        margin: auto;
+    }
+
+    .modalDialog {
+     position: Fixed;
+     top: 0;
+     right: 0;
+     bottom: 0;
+     left: 0;
+     background-color: rgba(0, 0, 0, 0.7);
+     z-index: 99999;
+     opacity: 0;
+     transition: opacity 400ms ease-in;
+     pointer-events: None;
+     overflow: auto;
+    }
+
+    .modalDialog:target {
+     opacity: 1;
+     pointer-events: Auto;
+    }
+
+    .modalDialog > div {
+     width: 800px;
+     position: relative;
+     margin: 10% Auto;
+     padding: 5px 20px 13px 20px;
+     border-radius: 10px;
+     background-color: #FFFFFF;
+     cursor: Default;
+    }
+
+    .close {
+     background-color: #606061;
+     color: #FFFFFF;
+     line-height: 35px;
+     position: Absolute;
+     right: -12px;
+     text-align: Center;
+     top: -10px;
+     width: 34px;
+     text-decoration: None;
+     font-weight: Bold;
+     font-size: 35px;
+     border-radius: 18px;
+     box-shadow: 1px 1px 3px #000000;
+     transform: rotate(45deg);
+
+    }
+
+    .close:hover {
+     background-color: #00D9FF;
+    }
+
+    .accordion{
+        position: relative;
+        margin: 10px 20px;
+    }
+
+    .labels{
+        position: relative;
+        padding: 8px;
+        background-color: #2694af;
+        cursor: pointer;
+        margin-bottom: 1em;
+        border-radius: 8px;
+    }
+
+    .details-content{
+        position: relative;
+        background-color: #bedfe8;
+        padding: 5px;
+        left: 4px;
+        margin-bottom: 1em;
+        border-radius: 8px;
+    }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+            <center><h1><div class='fancy'> Estudio sobre el español peninsular </div></h1></center>
+            <p>
+                El propósito de este estudio es comprender cómo los hablantes nativos utilizan y procesan el lenguaje.
+                Dentro del alcance del proyecto de investigación, los participantes tendrán que contestar a una serie preguntas acerca de las frases que aparezcan en su pantalla.
+                Dada la naturaleza del proyecto, el objetivo de la investigación (incluidas las hipótesis y predicciones específicas) no puede explicarse hasta que no se finalice el experimento.
+                Una vez acabado, se proporcionará toda la información relevante.<br>
+                Por favor, lea atentamente la siguiente información para decidir si desea participar en este estudio. Su participación es completamente voluntaria.
+                Puede encontrar más información sobre protección de datos <a href="#openModal">aquí.</a></p>
+
+            <div id="openModal" class="modalDialog">
+            <div>
+            <a href="#close" title="cerrar" class="close">+</a>
+            <h2>Información sobre protección de datos</h2>
+            <p>Con respecto a la recopilación de datos dentro del alcance del proyecto de investigación "STARFISH" en el Departamento de Lingüística de la Universidad de Constanza.</p>
+
+                <h4>  Controlador: </h4>
+                <p>
+                    Raquel Montero Estebaranz <br>
+                    Estudiante de doctorando<br>
+                    Constanza, Alemania<br>
+                    &#9993; e-mail: raquel.montero-estebaranz@uni-konstanz.de<br>
+                </p>
+                 <h3>Categorías de datos procesados</h3>
+                <p>
+                Se recopilarán las respuestas al cuestionario, su dirección IP (hash),
+                las fechas de inicio de sesión y los tiempos de reacción.
+                No habrá grabación de audio o vídeo.
+                </p>
+                <h3>Finalidad del tratamiento de datos y posibles consecuencias en caso de no facilitar datos personales</h3>
+                <p>Raquel Montero Estebaranz está examinando cómo las personas procesan y producen el lenguaje.
+                    La información proporcionada en los cuestionarios es necesaria para llevar a cabo el proyecto de investigación "STARFISH".
+                    No es posible participar en el proyecto de investigación sin facilitar estos datos.
+                    No existen inconvenientes en caso de no participación. Usted acepta el tratamiento de sus datos para:</p>
+                <ul>
+                     <li>Participar en y conducir el proyecto de investigación.</li>
+                     <li>Publicaciones científicas.</li>
+                     <li>Presentaciones científicas. </li>
+                     <li>Compartir los datos de investigación con terceros para proyectos de investigación no comerciales (en un repositorio).</li>
+                 </ul>
+            <h3>Base legal</h3>
+                <p>De acuerdo al Art. 6 párrafo 1(a) del Reglamento general de protección de datos (GDPR, siglas en inglés).</p>
+            <h3>Destinatarios</h3>
+                <p>
+                    Los datos serán procesados y manejados de tal manera que puedan ser procesados en países que no tienen el mismo nivel de protección de datos que la UE.
+                    Además, se deben observar las normas legales relativas al archivo y los documentos deben ser ofrecidos al archivo universitario antes de su borrado.
+                    El archivo universitario decide si los documentos se transfieren al archivo o no.
+                </p>
+            <h3>Período de almacenamiento</h3>
+                <ul>
+                    <li>Todos los datos de la investigación se almacenan durante diez años después de la finalización del proyecto.</li>
+                    <li>Esto no incluye su nombre y apellido.
+                        Estos últimos se almacenan con los documentos presupuestarios durante seis años de acuerdo con los requisitos presupuestarios.</li>
+                    <li>Esto no incluye los siguientes casos de procesamiento: uso de datos en publicaciones, presentaciones y en un repositorio en línea.
+                        Estos datos se almacenan hasta que se retira el consentimiento,
+                        o hasta que los datos se consideren no actualizados (30 años desde que se recopilaron los datos),
+                        según el caso que se aplique primero. </li>
+                    <li>Los documentos pueden transferirse al archivo universitario respectivo y generalmente se almacenan indefinidamente.</li>
+                </ul>
+            <h3>Sus derechos</h3>
+                <ul>
+                    <li>Tiene derecho a obtener información sobre sus datos almacenados y derecho a que se rectifiquen los datos falsos.</li>
+                    <li>Así mismo, tiene derecho a la supresión, el derecho a la limitación del tratamiento y el derecho a oponerse al tratamiento.</li>
+                    <li>En caso de que haya dado su consentimiento para el uso de datos en publicaciones, presentaciones y en un repositorio en línea, puede retirar su consentimiento (completamente o para casos individuales de procesamiento) en cualquier momento.
+                        La retirada del consentimiento no afecta a la licitud del tratamiento basado en el consentimiento antes de su retirada.</li>
+                </ul>
+                <p>Para ejercer sus derechos, póngase en contacto con:<br>
+                Raquel Montero Estebaranz, <br>
+                &#9993; e-mail: raquel.montero-estebaranz@uni-konstanz.de<br>
+                </p>
+                <p>Tiene derecho a presentar una reclamación ante una autoridad de control si considera que el tratamiento de sus datos personales infringe la normativa de protección de datos. </p>
+                <p>La autoridad supervisora en Baden-Württemberg es el comisionado para la protección de datos y la libertad de información de Baden-Württemberg (Landesbeauftragter für den Datenschutz und die Informationsfreiheit Baden-Württemberg). </p>
+            </div>
+            </div>
+        <h2> Información general </h2>
+            <div class="accordion">
+                <details class="ContentBx">
+                    <summary class="labels">Procedimiento</summary>
+                        <div class="details-content">
+                            <ul>
+                                <li> El estudio consta de un cuestionario demográfico y un formulario con preguntas en las que deberá de contestar (usando una escala del 1 al 5) cuán seguro está de si la situación descrita es cierta o no. </li>
+                                <li> La duración del experimento es de unos 15 minutos aproximadamente.</li>
+                    </div>
+                </details>
+
+                 <details class="ContentBx">
+                    <summary class="labels">Requisitos</summary>
+                        <div class="details-content">
+                            <ul>
+                                <li> Tener al menos 18 años y ser hablante nativo de español peninsular.</li>
+                                <li> No estar actualmente ni haber sido supervisado por el jefe del proyecto de investigación.</li>
+                                <li> Tener buena vista, lo que significa que su visión es buena sin necesidad de una ayuda óptica o está suficientemente corregida por medio de una ayuda óptica (que utilizará durante el experimento). </li>
+                            </ul>
+                    </div>
+            </details>
+                <details class="ContentBx">
+                    <summary class="labels">Manejo de datos en el proyecto de investigación</summary>
+                        <div class="details-content">
+                            <ul>
+                                <li> A cada participante se le asignará un número de identificación (ID).
+                                Este ID será generado por Raquel Montero Estebaranz y constará de letras y números que no tienen relación con su nombre
+                                (es decir, sin iniciales o similares). </li>
+                                <li> El emparejamiento de su ID de participante y su nombre se documenta en una lista separada.</li>
+                                <li> Los resultados publicados en revistas científicas, etc. se presentan de manera que no es posible rastrear los datos hasta los participantes. </li>
+                            </ul>
+                        </div>
+                </details>
+
+                <details class="ContentBx">
+                    <summary class="labels">Uso posterior de los datos</summary>
+                        <div class="details-content">
+                            <ul>
+                                <li>Nos gustaría utilizar los resultados en publicaciones y presentaciones científicas,
+                                así como compartir los datos en un repositorio en línea (para proyectos de investigación no comerciales).
+                                Esto significa que también se podrá acceder a sus respuestas en países que no tienen el mismo nivel de protección de datos que la UE.
+                                Esto incluye los EE.UU.
+                                No creemos que esto conlleve ningún riesgo particular para usted.</li>
+                            </ul>
+                        </div>
+                </details>
+            </div>
+        <h2>Datos de contacto</h2>
+            <p>
+            En caso de que tenga alguna pregunta o duda, no dude en ponerse en contacto con nosotros:
+            </p>
+            <p>
+            &#9993; <a href= "mailto:raquel.montero-estebaranz@uni-konstanz.de">raquel.montero-estebaranz@uni-konstanz.de</a>  <br>
+            Raquel Montero Estebaranz <br>
+            Estudiante de doctorado <br>
+            Universität Konstanz <br>
+            Universitätsstraße 10, <br>
+            78464 Konstanz<br>
+            </p>
+        <h2>Declaración de consentimiento</h2>
+        <p>Soy consciente de que doy mi consentimiento voluntariamente y que puedo retirar mi consentimiento (completamente o para casos individuales de procesamiento) en cualquier momento sin tener que indicar ningún motivo y que retirar mi consentimiento no tiene ninguna consecuencia negativa.
+            La retirada del consentimiento no afecta a la licitud del tratamiento basado en el consentimiento antes de su retirada.
+            He entendido que para retirar mi consentimiento puedo dirigirme a la persona que figura como contacto en la información anterior y que negarme a dar el consentimiento o retirarlo no tiene consecuencias negativas.
+            Así mismo, confirmo que se me facilitó la información sobre la recogida de datos personales.</p>
+    </div>
+</body>
+</html>
